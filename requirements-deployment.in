@@ -1,1 +1,4 @@
 pillow
+pandas
+numpy
+sklearn
