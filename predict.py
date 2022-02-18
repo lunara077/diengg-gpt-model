@@ -30,10 +30,10 @@ def predict(environ, start_response):
         with open('model.h5', 'rb') as f:
             model = pickle.load(f)
     pred = model.predict(df2)
-    
+    #pred = pred.where(pred==-1)
     #prediction = predict_image(model, image, inverted)
-    prediction = {'anomalies': where(pred == -1)}
-    prediction = prediction.tolist()
+    #prediction = {'anomalies': where(pred == -1)}
+    prediction = pred.tolist()
     # The following line allows Valohai to track endpoint predictions
     # while the model is deployed. Here we remove the full predictions
     # details as we are only interested in tracking the rest of the results.
