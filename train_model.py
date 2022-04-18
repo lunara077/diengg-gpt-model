@@ -1,8 +1,7 @@
 import uuid
 import pickle
 
-import numpy as np
-import tensorflow as tf
+
 import valohai
 import pandas as pd
 from sklearn.neighbors import LocalOutlierFactor

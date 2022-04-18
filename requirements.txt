@@ -5,6 +5,7 @@
 #    pip-compile requirements.in
 #
 toposort
+valohai
 tensorflow==1.15
 tqdm
 regex
