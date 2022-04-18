@@ -14,17 +14,7 @@
     image: tensorflow/tensorflow:1.15.0
     command:
       - pip install valohai-utils
-      - python ./train_model.py {parameters}
-    parameters:
-      - name: epochs
-        default: 5
-        type: integer
-      - name: learning_rate
-        default: 0.001
-        type: float
-    inputs:
-      - name: dataset
-        default: https://valohaidemo.blob.core.windows.net/mnist/preprocessed_mnist.npz
+      - python ./train_model.py
 
 - step:
     name: batch-inference
