@@ -257,11 +257,7 @@ def main():
         image='tensorflow/tensorflow:1.15.0',
         default_inputs={
             'dataset': '"data/test_cases_produced.csv"',
-        },
-        default_parameters={
-            'learning_rate': 0.001,
-            'epochs': 5,
-        },
+        }
     )
 
     data_file = valohai.inputs('dataset').path()
