@@ -7,6 +7,19 @@ import tensorflow as tf
 import valohai
 import pandas as pd
 from sklearn.neighbors import LocalOutlierFactor
+import sys,os,json,shutil,re,urllib.request,time
+from tensorflow.python.client import device_lib
+from src.accumulate import AccumulatingOptimizer
+from tqdm import tqdm
+import numpy as np
+from sys import exit
+from tensorflow.core.protobuf import rewriter_config_pb2
+from src import model, sample, encoder
+import tensorflow as tf
+from datetime import datetime
+from src.load_dataset import load_dataset, Sampler
+
+tf.compat.v1.disable_eager_execution()
 # def log_metadata(epoch, logs):
 #     """Helper function to log training metrics"""
 #     with valohai.logger() as logger:

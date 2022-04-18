@@ -4,6 +4,10 @@
 #
 #    pip-compile requirements.in
 #
+toposort
+tensorflow==1.15
+tqdm
+regex
 absl-py==0.14.0
     # via
     #   tensorboard
@@ -22,7 +26,7 @@ clang==5.0
     # via tensorflow
 flatbuffers==1.12
     # via tensorflow
-gast==0.4.0
+gast==0.2.2
     # via tensorflow
 google-auth==1.35.0
     # via
@@ -99,16 +103,10 @@ six==1.15.0
     #   jsonschema
     #   keras-preprocessing
     #   tensorflow
-tensorboard==2.6.0
-    # via tensorflow
 tensorboard-data-server==0.6.1
     # via tensorboard
 tensorboard-plugin-wit==1.8.0
     # via tensorboard
-tensorflow==2.6.0
-    # via -r requirements.in
-tensorflow-estimator==2.6.0
-    # via tensorflow
 termcolor==1.1.0
     # via tensorflow
 tqdm==4.62.3
