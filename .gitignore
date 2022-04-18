@@ -5,3 +5,5 @@
 .valohai/
 venv
 venv/
+models
+models/
