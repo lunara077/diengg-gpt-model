@@ -15,43 +15,39 @@ astunparse==1.6.3
     # via tensorflow
 attrs==21.2.0
     # via jsonschema
-cachetools==4.2.2
+cachetools
     # via google-auth
-certifi==2021.5.30
+certifi
     # via requests
-charset-normalizer==2.0.6
+charset-normalizer
     # via requests
-clang==5.0
+clang
     # via tensorflow
-flatbuffers==1.12
+flatbuffers
     # via tensorflow
-gast==0.2.2
+gast
     # via tensorflow
-google-auth==1.35.0
+google-auth
     # via
     #   google-auth-oauthlib
     #   tensorboard
-google-auth-oauthlib==0.4.6
+google-auth-oauthlib
     # via tensorboard
-google-pasta==0.2.0
+google-pasta
     # via tensorflow
-grpcio==1.41.0
+grpcio
     # via
     #   tensorboard
     #   tensorflow
-h5py==3.1.0
+h5py
     # via tensorflow
-idna==3.2
+idna
     # via requests
-jsonschema==3.2.0
+jsonschema
     # via valohai-yaml
-keras==2.6.0
-    # via tensorflow
-keras-preprocessing==1.1.2
-    # via tensorflow
-markdown==3.3.4
+markdown
     # via tensorboard
-numpy==1.19.5
+numpy
     # via
     #   -r requirements.in
     #   h5py
@@ -59,40 +55,40 @@ numpy==1.19.5
     #   opt-einsum
     #   tensorboard
     #   tensorflow
-oauthlib==3.1.1
+oauthlib
     # via requests-oauthlib
-opt-einsum==3.3.0
+opt-einsum
     # via tensorflow
-pandas==1.1.4
+pandas
     # via -r requirements.in
-sklearn==0.0
+sklearn
     # via -r requirements.in
-pillow==8.3.2
+pillow
     # via -r requirements.in
-protobuf==3.18.0
+protobuf
     # via
     #   tensorboard
     #   tensorflow
-pyasn1==0.4.8
+pyasn1
     # via
     #   pyasn1-modules
     #   rsa
-pyasn1-modules==0.2.8
+pyasn1-modules
     # via google-auth
-pyrsistent==0.18.0
+pyrsistent
     # via jsonschema
-pyyaml==5.4.1
+pyyaml
     # via valohai-yaml
-requests==2.26.0
+requests
     # via
     #   requests-oauthlib
     #   tensorboard
     #   valohai-utils
-requests-oauthlib==1.3.0
+requests-oauthlib
     # via google-auth-oauthlib
-rsa==4.7.2
+rsa
     # via google-auth
-six==1.15.0
+six
     # via
     #   absl-py
     #   astunparse
@@ -102,34 +98,34 @@ six==1.15.0
     #   jsonschema
     #   keras-preprocessing
     #   tensorflow
-tensorboard-data-server==0.6.1
+tensorboard-data-server
     # via tensorboard
-tensorboard-plugin-wit==1.8.0
+tensorboard-plugin-wit
     # via tensorboard
-termcolor==1.1.0
+termcolor
     # via tensorflow
-tqdm==4.62.3
+tqdm=
     # via valohai-utils
-typing-extensions==3.7.4.3
+typing-extensions
     # via tensorflow
-urllib3==1.26.7
+urllib3
     # via requests
-valohai-papi==0.1.3
+valohai-papi
     # via valohai-utils
-valohai-utils==0.1.11
+valohai-utils
     # via -r requirements.in
-valohai-yaml==0.15.0
+valohai-yaml
     # via
     #   valohai-papi
     #   valohai-utils
-werkzeug==2.0.1
+werkzeug
     # via tensorboard
-wheel==0.37.0
+wheel
     # via
     #   astunparse
     #   tensorboard
     #   tensorflow
-wrapt==1.12.1
+wrapt
     # via tensorflow
 
 # The following packages are considered to be unsafe in a requirements file:
