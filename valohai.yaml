@@ -1,5 +1,4 @@
 ---
-
 - step:
     name: train-model
     image: tensorflow/tensorflow:1.15.0
@@ -15,4 +14,4 @@
         type: float
     inputs:
       - name: dataset
-        default: data/test_cases_produced.csv
+        default: https://valohaidemo.blob.core.windows.net/mnist/preprocessed_mnist.npz
