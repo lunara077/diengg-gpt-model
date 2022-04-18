@@ -3,5 +3,4 @@ pandas
 sklearn
 pillow
 tensorflow==1.15.0
-valohai-yaml>=0.13.0
 valohai-utils
