@@ -4,8 +4,8 @@
     name: train-model
     image: tensorflow/tensorflow:1.15.0
     command:
-      - pip install -r requirements.txt
-      - python ./train_model.py
+      - pip install valohai-utils
+      - python ./train_model.py {parameters}
     parameters:
       - name: epochs
         default: 5
@@ -13,6 +13,6 @@
       - name: learning_rate
         default: 0.001
         type: float
-      inputs:
-        - name: dataset
-          default: data/test_cases_produced.csv
+    inputs:
+      - name: dataset
+        default: data/test_cases_produced.csv
