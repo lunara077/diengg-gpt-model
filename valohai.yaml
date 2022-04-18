@@ -6,3 +6,13 @@
     command:
       - pip install -r requirements.txt
       - python ./train_model.py
+    parameters:
+      - name: epochs
+        default: 5
+        type: integer
+      - name: learning_rate
+        default: 0.001
+        type: float
+      inputs:
+        - name: dataset
+          default: data/test_cases_produced.csv
