@@ -13,7 +13,7 @@
     name: train-model
     image: tensorflow/tensorflow:1.15.0
     command:
-      - pip install -r requirements.txt
+      - pip install valohai-utils
       - python ./train_model.py
 
 - step:
