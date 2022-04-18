@@ -276,10 +276,10 @@ def main():
                 steps=100,
                 run_name='run1')
 
-    suffix = uuid.uuid4()
-    output_path = valohai.outputs().path(f'model-{suffix}.h5')
-    with open(output_path, 'wb') as f:
-        pickle.dump(model, f)
+    # suffix = uuid.uuid4()
+    # output_path = valohai.outputs().path(f'model-{suffix}.h5')
+    # with open(output_path, 'wb') as f:
+    #     pickle.dump(model, f)
     # model.save(output_path)
 
 
