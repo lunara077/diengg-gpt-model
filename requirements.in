@@ -4,4 +4,5 @@ sklearn
 pillow
 pickle
 tensorflow==1.15.0
+valohai-yaml==0.6.1
 valohai-utils
