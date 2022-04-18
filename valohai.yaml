@@ -4,6 +4,7 @@
     image: tensorflow/tensorflow:1.15.0
     command:
       - pip install valohai-utils
+      - pip install -r requirements.txt
       - python ./train_model.py {parameters}
     parameters:
       - name: epochs
