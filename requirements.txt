@@ -104,7 +104,7 @@ tensorboard-plugin-wit
     # via tensorboard
 termcolor
     # via tensorflow
-tqdm=
+tqdm
     # via valohai-utils
 typing-extensions
     # via tensorflow
