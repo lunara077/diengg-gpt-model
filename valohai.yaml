@@ -5,14 +5,34 @@
     command:
       - pip install valohai-utils
       - pip install -r requirements.txt
-      - python ./train_model.py {parameters}
-    parameters:
-      - name: epochs
-        default: 5
-        type: integer
-      - name: learning_rate
-        default: 0.001
-        type: float
+      - python ./train_model.py
     inputs:
       - name: dataset
         default: https://valohaidemo.blob.core.windows.net/mnist/preprocessed_mnist.npz
+
+- pipeline:
+    name: Training Pipeline
+    nodes:
+      - name: train
+        type: execution
+        step: train-model
+        override:
+          inputs:
+            - name: dataset
+      - name: deploy
+        type: deployment
+        deployment: deployment-test
+        endpoints:
+          - generate-testcases
+    edges:
+      - [train.output.model*, deploy.file.generate-testcases.model]
+
+- endpoint:
+    name: generate-testcases
+    description: generate testcases
+    image: tensorflow/tensorflow:2.6.0
+    wsgi: generate:generate
+    files:
+      - name: model
+        description: Model output file from TensorFlow
+        path: model.h5

@@ -196,7 +196,12 @@ def fine_tuning(session,
             global_step=counter - 1)
         with open(counter_path, 'w') as fp:
             fp.write(str(counter - 1) + '\n')
-
+        suffix = uuid.uuid4()
+        output_path = valohai.outputs().path(f'model-{suffix}.h5')
+        with open(output_path, 'wb') as f:
+            pickle.dump(session, f)
+        model.save(output_path)
+        
     while True:
         if steps > 0 and counter == (counter_base + steps):
             save()
@@ -254,12 +259,7 @@ def main():
                 model_type='124M',
                 steps=100,
                 run_name='run1')
-
-    # suffix = uuid.uuid4()
-    # output_path = valohai.outputs().path(f'model-{suffix}.h5')
-    # with open(output_path, 'wb') as f:
-    #     pickle.dump(model, f)
-    # model.save(output_path)
+    
 
 
 if __name__ == '__main__':
