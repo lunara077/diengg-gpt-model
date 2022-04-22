@@ -12,7 +12,7 @@ from src.sample import *
 from src.model import *
 import tensorflow as tf
 from src.load_dataset import *
-
+#import pandas as pd
 tf.compat.v1.disable_eager_execution()
 
 # Feature selection
@@ -21,10 +21,11 @@ tf.compat.v1.disable_eager_execution()
 def process_restler_output(restler_raw_file='test_cases_produced.csv',
                            restler_processed_file="RESTler_unique_output.txt"):
     import csv, itertools
+    #csvreader = pd.read_csv(restler_raw_file)
     file = open(restler_raw_file)
     csvreader = csv.reader(file)
-    header = next(csvreader)
-    print(header)
+    #header = next(csvreader)
+    #print(header)
     rows = []
     for row in csvreader:
         rows.append(row)
