@@ -6,8 +6,12 @@ import sys, os, json, shutil, re, urllib.request, time
 from src.accumulate import AccumulatingOptimizer
 from tensorflow.core.protobuf import rewriter_config_pb2
 from src import model, sample, encoder
+from src.encoder import *
+from src.accumulate import *
+from src.sample import *
+from src.model import *
 import tensorflow as tf
-from src.load_dataset import load_dataset, Sampler
+from src.load_dataset import *
 
 tf.compat.v1.disable_eager_execution()
 

@@ -100,7 +100,7 @@ sklearn==0.0
     # via -r requirements.in
 tensorboard==1.15.0
     # via tensorflow
-tensorflow==1.15.0
+tensorflow==2.6.0
     # via -r requirements.in
 tensorflow-estimator==1.15.1
     # via tensorflow
@@ -116,7 +116,7 @@ urllib3==1.26.9
     # via requests
 valohai-utils==0.1.11
     # via -r requirements.in
-valohai-yaml==0.9.1
+valohai-yaml==0.15.0
     # via valohai-utils
 werkzeug==2.0.3
     # via tensorboard
