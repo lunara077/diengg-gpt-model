@@ -16,7 +16,7 @@ cached-property==1.5.2
     # via h5py
 certifi==2021.10.8
     # via requests
-charset-normalizer==2.0.12
+charset-normalizer==2.0.6
     # via requests
 colorama==0.4.4
     # via tqdm

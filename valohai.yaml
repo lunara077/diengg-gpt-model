@@ -1,7 +1,7 @@
 ---
 - step:
     name: train-model
-    image: tensorflow/tensorflow:1.15.0
+    image: tensorflow/tensorflow:2.6.0
     command:
       - pip install valohai-utils
       - pip install -r requirements.txt
