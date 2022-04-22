@@ -116,7 +116,7 @@ urllib3==1.26.9
     # via requests
 valohai-utils==0.1.11
     # via -r requirements.in
-valohai-yaml==0.15.0
+valohai-yaml==0.9.1
     # via valohai-utils
 werkzeug==2.0.3
     # via tensorboard
