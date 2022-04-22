@@ -196,6 +196,7 @@ def fine_tuning(session,
             global_step=counter - 1)
         with open(counter_path, 'w') as fp:
             fp.write(str(counter - 1) + '\n')
+        
         suffix = uuid.uuid4()
         output_path = valohai.outputs().path(f'model-{suffix}.h5')
         with open(output_path, 'wb') as f:
